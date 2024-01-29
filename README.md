@@ -1,5 +1,6 @@
 # rewrite
 Definitions
+
 Rewrite: List of sentences used to replace a single sentence in a piece of writing. For each sentence, the user creates multiple rewrites, each of which is stored in   a list. Once the user has finished adding rewrites, they pick the one they like the best, and it is inserted into the document. Replacing the original sentence. 
 
 Prototype: Works on a paragraph one sentence at a time allowing the user to store rewrites for each sentence in the command line.
