@@ -5,6 +5,7 @@ Rewrite: List of sentences used to replace a single sentence in a piece of writi
 
 Prototype: Works on a paragraph one sentence at a time allowing the user to store rewrites for each sentence in the command line.
 
+
 About
 
 Rewrite is a simple text editing application that aims to assist writers in the final step of the writing process. It allows the user to rewrite each sentence and stores each rewrite for said sentence in a list. The user can then select one of said rewrites and see it inserted into thier work, replacing the original sentence. This is the main goal of the program and it is meant to be used as the final editing process of writing. It is meant to be used in tandem with your favorite text editing software rather than replace it.
