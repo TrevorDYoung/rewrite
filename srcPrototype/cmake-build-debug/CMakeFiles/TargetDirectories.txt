@@ -1,0 +1,3 @@
+C:/Users/Trevo/CLionProjects/Rewrite/cmake-build-debug/CMakeFiles/Rewrite.dir
+C:/Users/Trevo/CLionProjects/Rewrite/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Trevo/CLionProjects/Rewrite/cmake-build-debug/CMakeFiles/rebuild_cache.dir

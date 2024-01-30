@@ -1,0 +1,85 @@
+Purpose:
+	[X]Allow user to edit a paragraph in a way that microsoft word actually does not provide.
+	[X]Automate rewriting process.
+	[X]Must take the least amount of time away from the creative process as possible.
+	
+Definitions:
+	Rewrite: The process of going through my rough draft and rewriting each sentence 5 times and picking the best one. One by one for each sentence. Including outlining the sentence context, idea, and functional purpose.
+
+Problem: 
+	I'm too lazy to rewrite my sentences as writing in MS word.
+	Rewriting in word can sometimes mess up surrounding sentences.
+	Rewriting in word is messy and can sometimes mess with surrounding sentences.
+	Rewriting is time-consuming with tables, comments, basically all the attempted methods in word.
+	
+Requirments:
+	[X]Must accept entire paragraphs and parse out each sentence. Working on each one at a time.
+	[X]Must display all rewrites and paragraph.
+	[X]As you pick different rewrites from the list, the paragraph updates.
+	[X]Rewrites must allow 20 indexes. Or make it a vector.
+	[X]Implement the delete rewrite function.
+	
+Bugs:
+	[X]Fix the work around on rewrite list. Currently limits the user to 10 rewrites and will go out of bounds.
+	[X]Check user input does not go out ob bounds for rewrite.
+	[X]Loading breaks when the user doesn't end a sentence with punctuation. This is due to the missmatch sentence objects to rewrites in the save file.
+		-Potentail fix. In the add rewrite function under Sentence class, check if the argument ends in punctuation. If not, append a period at the end.
+	
+Ideas:
+	Menu driven, function that accepts menu options.
+		Variables:
+			arr[MAX_SENTENCES] paragraph //paragraph is an object
+		
+		Functions:
+			deleteRewrite //get rewrite; return int selection;
+			editRewrite //WIBNI
+			nextSentence
+			lastSentence
+		
+	Each sentence is an object. They can all be shoved in an array in main.
+		Attributes:
+			String content
+			vector rewrites //Too many index related operations to use array. Delete being the most messy.
+		
+		Functions:
+			get rewrites
+			add rewrite
+			insertSelectedRewrite //this.content = selection
+			deleteRewrite (int selection) //Only called in main function with maching name.
+
+OutPut:
+	Paste paragraph to rewrite: 
+	
+	-------------------------------Paragraph-------------------------------
+	*Display Paragraph highlight sentence being operated on somehow.*
+	-------------------------------Rewrites-------------------------------
+	*List of rewrites with index values as menu options.*
+	-------------------------------Menu-------------------------------
+	Type a sentence to add a rewrite. Numbers will insert corrisponding rewrite.
+	A) Go to next sentence.
+	B) Go to previous sentence.
+	C) Delete rewrite. //runs deleteRewrite
+	D) Edit rewrite. //WIBNI
+	E) Finished.
+	
+	-------------------------------Finished Paragraph-------------------------------
+	
+	-------------------------------Finished Paragraph-------------------------------
+	Paste paragraph to rewrite:
+	
+Very High Priority(!!) High Priority(!) Normal Priority (NULL) Low Priority (zzz) Very Low Priority (Zzz) Should I Even bother? (???)
+	[X]		Didnt display empty strings in paragraph
+	[X]		Better formatting on the displayed paragraph
+	[X]		Add to sentence a string variable named sentenceIdea. Here the user can store the goal of the sentence.
+	[X](!!)	Insert a new sentence and move the rest in front up one. Could use a series of swaps to do this. Or just use a vector.
+	[X](!)  Saving and loading from a file. Option to paste or load.
+	[X](!!) When you select finished, it needs to print out a copy paste friendly version of the paragraph. Remove new lines. 
+	[X](!!) Insert a space at the start of every rewrite.
+	[X](!) 	Display the menu options in a grid.
+	[X](!!)	Load the saved rewrites.
+	[X](zzz) Program runs with the assumption that paragraphs dont normally have over 30 sentences. More than enough.
+	[X](!) 	Add idea string to swap function.
+	[X](!) 	Add idea string to the clear fucntion.
+	[](Zzz)	Edit rewrite. Will be easier to impliment proper when program is GUI.
+	[](???) Option to save more than one file.
+	[](!)	Fancy GUI.
